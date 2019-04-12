@@ -1,1 +1,3 @@
-console.log('Hello world')
+import greeting from './greet'
+
+console.log(greeting)
