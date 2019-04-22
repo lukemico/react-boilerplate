@@ -14,7 +14,9 @@ module.exports = {
 				loader: "babel-loader",
 				exclude: /node_modules/,
 				options: {
-					presets: ["@babel/preset-env", "@babel/preset-react"]
+					presets: ["@babel/preset-env", "@babel/preset-react"],
+					// Support Proposed JavaScript Features with Babel Plugins
+					plugins: ["@babel/plugin-proposal-class-properties"]
 				}
 			}
 		]

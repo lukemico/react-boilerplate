@@ -6,5 +6,6 @@ module.exports = merge(baseConfig, {
 	devServer: {
 		port: 9000
 	},
+	// devtool - this generates Source Maps through webpack for a Better Debugging Experience with source-map
 	devtool: "source-map"
 });
