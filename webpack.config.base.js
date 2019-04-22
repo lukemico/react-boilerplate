@@ -17,7 +17,11 @@ module.exports = {
 				options: {
 					presets: ["@babel/preset-env", "@babel/preset-react"],
 					// Support Proposed JavaScript Features with Babel Plugins
-					plugins: ["@babel/plugin-proposal-class-properties"]
+					plugins: [
+						// PLugin for Hot Reload a React App in Development with react-hot-loader
+						"react-hot-loader/babel",
+						"@babel/plugin-proposal-class-properties"
+					]
 				}
 			},
 			// Automatically Import CSS in JavaScript with webpack using style-loader and css-loader
