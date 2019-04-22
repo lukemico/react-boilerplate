@@ -9,6 +9,7 @@ module.exports = {
 	},
 	module: {
 		rules: [
+			// Automatically JavaScript with webpack using babel-loader
 			{
 				test: /\.js$/,
 				loader: "babel-loader",
@@ -18,6 +19,12 @@ module.exports = {
 					// Support Proposed JavaScript Features with Babel Plugins
 					plugins: ["@babel/plugin-proposal-class-properties"]
 				}
+			},
+			// Automatically Import CSS in JavaScript with webpack using style-loader and css-loader
+			{
+				test: /\.css$/,
+				use: ["style-loader", "css-loader"],
+				exclude: /node_modules/
 			}
 		]
 	},
