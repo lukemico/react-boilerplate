@@ -15,7 +15,21 @@ module.exports = {
 				loader: "babel-loader",
 				exclude: /node_modules/,
 				options: {
-					presets: ["@babel/preset-env", "@babel/preset-react"],
+					presets: [
+						[
+							"@babel/preset-env",
+							{
+								targets: [
+									"last 2 versions",
+									"not dead",
+									"not < 2%",
+									"not ie 11"
+								],
+								useBuiltIns: "entry"
+							}
+						],
+						"@babel/preset-react"
+					],
 					// Support Proposed JavaScript Features with Babel Plugins
 					plugins: [
 						// PLugin for Hot Reload a React App in Development with react-hot-loader
