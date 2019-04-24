@@ -32,9 +32,10 @@ module.exports = {
 					],
 					// Support Proposed JavaScript Features with Babel Plugins
 					plugins: [
-						// PLugin for Hot Reload a React App in Development with react-hot-loader
+						// Plugin for Hot Reload a React App in Development with react-hot-loader
 						"react-hot-loader/babel",
-						"@babel/plugin-proposal-class-properties"
+						"@babel/plugin-proposal-class-properties",
+						"@babel/plugin-syntax-dynamic-import"
 					]
 				}
 			},
