@@ -13,31 +13,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				loader: "babel-loader",
-				exclude: /node_modules/,
-				options: {
-					presets: [
-						[
-							"@babel/preset-env",
-							{
-								targets: [
-									"last 2 versions",
-									"not dead",
-									"not < 2%",
-									"not ie 11"
-								],
-								useBuiltIns: "entry"
-							}
-						],
-						"@babel/preset-react"
-					],
-					// Support Proposed JavaScript Features with Babel Plugins
-					plugins: [
-						// Plugin for Hot Reload a React App in Development with react-hot-loader
-						"react-hot-loader/babel",
-						"@babel/plugin-proposal-class-properties",
-						"@babel/plugin-syntax-dynamic-import"
-					]
-				}
+				exclude: /node_modules/
 			},
 			// Automatically Import CSS in JavaScript with webpack using style-loader and css-loader
 			{
