@@ -1,9 +1,9 @@
 import React from 'react';
-    import { hot } from 'react-hot-loader';
+import { hot } from 'react-hot-loader';
 
 const Warning = React.lazy(() => import('./Warning'));
 
-      class App extends React.Component {
+class App extends React.Component {
   // definte the state for count
   state = {
     count: 0
