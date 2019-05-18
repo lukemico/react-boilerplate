@@ -11,7 +11,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 ReactDOM.render(
-  // wrap App component with React.StrictMode to highlight and avoid any deprecated APIs
   <React.StrictMode>
     <DefaultErrorBoundary>
       <App />
