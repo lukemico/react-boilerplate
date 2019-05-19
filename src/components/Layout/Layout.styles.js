@@ -1,18 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: linear-gradient(
-    to bottom,
-    ${props => props.theme.colors.white} 75vh,
-    ${props => props.theme.colors.lightGrey} 120vh
-  );
   display: flex;
   min-height: 100%;
   flex-direction: column;
-
-  ${props => props.theme.media.medium`
-   padding-top: 5rem;
- `}
 `;
 
 export const Wrapper = styled.div`

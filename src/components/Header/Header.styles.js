@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  background-color: ${props => props.theme.colors.white};
-
-  ${props => props.theme.media.medium`
-   position: fixed;
-   top: 0;
-   width: 100%;
-   z-index: 2;
-   height: 5rem;
- `}
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  height: 5rem;
 `;
 
 // export const HeaderWrapper = styled(Wrapper)`
