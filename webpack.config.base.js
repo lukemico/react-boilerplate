@@ -5,23 +5,27 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
-      // Automatically JavaScript with webpack using babel-loader
+      // Automatically import JavaScript with webpack using babel-loader
       {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },
-      // Automatically Import CSS in JavaScript with webpack using style-loader and css-loader
+      // Automatically import CSS in JavaScript with webpack using style-loader and css-loader
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
         exclude: /node_modules/
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true
   },
   plugins: [
     new HtmlWebpackPlugin({

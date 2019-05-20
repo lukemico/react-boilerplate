@@ -1,11 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
-// import paths from './paths';
-import Home from './scenes/Home';
-import Transfers from './scenes/Transfers';
-import Transactions from './scenes/Transactions';
-import Contact from './scenes/Contact';
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './App';
 
 class App extends React.Component {
   // definte the state for count
@@ -15,17 +11,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <BrowserRouter>
-          <Switch>
-            <Route exact path="/home" component={Home} />
-            <Route exact path="/">
-              <Redirect to="/home" />
-            </Route>
-            <Route exact path="/transfers" component={Transfers} />
-            <Route exact path="/transactions" component={Transactions} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
+          <AppRoutes />
         </BrowserRouter>
       </div>
     );

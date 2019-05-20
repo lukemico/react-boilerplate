@@ -1,1 +1,1 @@
-export { TransactionsContainer as default } from './Transactions.container';
+export { Transactions as default } from './Transactions.container';

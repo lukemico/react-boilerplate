@@ -1,1 +1,1 @@
-export { TransactionsContainer as default } from './Contact.container';
+export { Contact as default } from './Contact.container';

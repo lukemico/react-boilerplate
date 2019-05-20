@@ -1,1 +1,1 @@
-export { TransfersContainer as default } from './Transfers.container';
+export { Transfers as default } from './Transfers.container';
